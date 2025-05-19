@@ -1,52 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Game Guide</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <title>Game Guide</title>
+ 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .navbar {
+  background-color: #333;
+  text-align: center;
+  padding: 6px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 5;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    .game-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .gallery img {
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Game Guide</h1>
-        <p>Explore different video games with stats, achievements, tips, and more.</p>
-    </header>
+  <header>
+    <h1>Game Guide</h1>
+    <p>Your hub for game details, tips, and features</p>
+  </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="Homepage.html">Home</a></li>
-            <li><a href="Elden ring.html">Elden Ring</a></li>
-            <li><a href="grand turismo.html">Grand Turismo</a></li>
-            <li><a href="Call of duty.html">Call of Duty</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <ul>
+      <li><a href="Homepage.html">Home</a></li>
+      <li><a href="Elden ring.html">Elden Ring</a></li>
+      <li><a href="grand turismo.html">Gran Turismo</a></li>
+      <li><a href="Call of duty.html">Call of Duty</a></li>
+    </ul>
+  </nav>
 
-    <main class="homepage-main">
-        <section class="intro">
-            <h2>Welcome to Game Guide</h2>
-            <p>This site is your hub for discovering top video games. Learn about the games, explore gameplay tips, view cool images, and track iconic achievements from your favorite titles.</p>
-        </section>
+  <main>
+    <section class="about-site">
+      <h2>About This Website</h2>
+      <p>Game Guide is your place to explore popular games, see key features, gameplay tips, achievements, and media for each one. Whether you're a casual player or a die-hard fan, we’ve got quick info for you.</p>
+    </section>
 
-        <section class="game-summary">
-            <h2>Featured Games</h2>
+    <section class="game-summary">
+      <h2>Featured Games</h2>
 
-            <div class="game-card">
-                <h3>Elden Ring</h3>
-                <p>A fantasy open-world RPG by FromSoftware with deep lore, brutal combat, and massive exploration.</p>
-                <a href="Elden ring.html"><button>Explore Elden Ring</button></a>
-            </div>
+      <div class="game-card">
+        <h3>Elden Ring</h3>
+        <p>An open-world action RPG by FromSoftware filled with mystery, deadly enemies, and epic boss fights.</p>
+        <a href="Elden ring.html"><button>Explore Elden Ring</button></a>
+      </div>
 
-            <div class="game-card">
-                <h3>Grand Turismo</h3>
-                <p>A highly realistic racing simulator featuring real-world cars, tracks, and tuning options for motorsport fans.</p>
-                <a href="grand turismo.html"><button>Explore Grand Turismo</button></a>
-            </div>
+      <div class="game-card">
+        <h3>Grand Turismo</h3>
+        <p>A high-end racing simulator with real cars, real physics, and real tracks.</p>
+        <a href="grand turismo.html"><button>Explore Grand Turismo</button></a>
+      </div>
 
-            <div class="game-card">
-                <h3>Call of Duty</h3>
-                <p>An iconic first-person shooter with cinematic campaigns, fast-paced multiplayer, and the popular Warzone mode.</p>
-                <a href="Call of duty.html"><button>Explore Call of Duty</button></a>
-            </div>
-        </section>
-    </main>
+      <div class="game-card">
+        <h3>Call of Duty</h3>
+        <p>A world-famous shooter with fast-paced action, multiplayer chaos, and cinematic storylines.</p>
+        <a href="Call of duty.html"><button>Explore Call of Duty</button></a>
+      </div>
+    </section>
+
+    <section class="featured-game">
+      <h2>🎮 Game of the Week</h2>
+      <p><strong>Elden Ring:</strong> Explore the Lands Between in a massive open world where danger lurks in every shadow. Customize your character, battle fearsome bosses, and uncover a hauntingly beautiful world crafted by Hidetaka Miyazaki and George R.R. Martin.</p>
+      <img src="Elden ring stuff/map.jpg.jpg" alt="Elden Ring Screenshot" width="100%" />
+    </section>
+
+    <section class="trailer">
+      <h2>🎥 Elden Ring Trailer</h2>
+      <iframe src="https://www.youtube.com/embed/E3Huy2cdih0" title="Elden Ring Trailer" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="gallery">
+      <h2>🖼️ Game Gallery</h2>
+      <img src="Call of duty stuff/Cod gameplay sliding.jpg" alt="Call of Duty" width="250" />
+      <img src="grand turismo stuff/Grand mountain gameplay.jpg" alt="Gran Turismo" width="250" />
+      <img src="Elden ring stuff/bossfight.jpg.jpg" alt="Elden Ring" width="250" />
+    </section>
+
+    <section class="reviews">
+      <h2>🌟 Player Reviews</h2>
+      <p><strong>Elden Ring:</strong> ⭐⭐⭐⭐⭐ – “Best open-world game ever made.”</p>
+      <p><strong>Gran Turismo:</strong> ⭐⭐⭐⭐ – “Feels like real driving. Gorgeous cars.”</p>
+      <p><strong>Call of Duty:</strong> ⭐⭐⭐⭐ – “Nonstop action. Multiplayer is awesome.”</p>
+    </section>
+  </main>
 </body>
 </html>

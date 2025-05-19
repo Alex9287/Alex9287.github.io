@@ -1,53 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Call of Duty</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Call of Duty - Game Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .navbar {
+      background-color: #333;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li {
+      margin: 0;
+    }
+
+    .nav-links a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      background-color: #575757;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Call of Duty</h1>
+    <p>Fast-paced action and cinematic warfare</p>
   </header>
 
   <nav class="navbar">
-    <ul>
+    <ul class="nav-links">
       <li><a href="Homepage.html">Home</a></li>
       <li><a href="Elden ring.html">Elden Ring</a></li>
-      <li><a href="grand turismo.html">Grand Turismo</a></li>
+      <li><a href="grand turismo.html">Gran Turismo</a></li>
       <li><a href="Call of duty.html">Call of Duty</a></li>
     </ul>
   </nav>
 
-  <main class="game-card">
-    <img src="call-logo.jpg" alt="Call of Duty" />
-    <p><strong>Info:</strong> <em>Call of Duty</em> is a first-person shooter franchise developed by multiple studios including Infinity Ward, Treyarch, and Sledgehammer Games. It features fast-paced combat in both single-player and multiplayer modes.</p>
-<p>Game Rating: 4 and a half stars</p>
-<span class="csrc sc_rc1" role="img" aria-label="Star Rating: 4.5 out of 5."><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_st"></span><span class="sw_sth"></span></span>
-<h2>Key Features</h2>
-    <ul>
-        <li>Intense campaign missions and cinematic storytelling</li>
-        <li>Online multiplayer with competitive game modes</li>
-        <li>Zombies mode and Warzone battle royale</li>
-        <li>Wide variety of weapons and loadouts</li>
-        <li>Cross-platform play support</li>
-    </ul>
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p><strong>Call of Duty</strong> delivers thrilling first-person shooter action. Whether you're battling through intense campaigns or dominating in online multiplayer, COD is known for its cinematic style, tight gunplay, and adrenaline-fueled chaos.</p>
+    </section>
 
-    <h2>Gameplay Tip</h2>
-    <p>Use cover effectively, and always check your mini-map. Customize your loadout to suit your playstyle.</p>
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>Fast-paced multiplayer battles</li>
+        <li>High-action story campaigns</li>
+        <li>Zombie mode in select games</li>
+        <li>Weapon customization & perks</li>
+        <li>Seasonal events & battle passes</li>
+      </ul>
+    </section>
 
-    <h2>Achievements</h2>
-    <ul>
-        <li>Prestiged to max level</li>
-        <li>Won 100+ Warzone matches</li>
-        <li>Completed campaign on Veteran difficulty</li>
-    </ul>
+    <section>
+      <h2>Gallery</h2>
+      <img src="Call of duty stuff/call-logo.jpg" alt="Call of Duty Screenshot">
+    </section>
 
-    <h2>Useful Links</h2>
-    <ul>
-        <li><a href="https://www.callofduty.com/" target="_blank">Official Website</a></li>
-        <li><a href="https://www.reddit.com/r/CallOfDuty/" target="_blank">Reddit Community</a></li>
-    </ul>
+    <section>
+      <h2>Trailer</h2>
+      <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/oyZY_BiTmd8?si=BbrlTV4HyR0rnOnB" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li><strong>Veteran Warrior:</strong> Complete campaign on Veteran</li>
+        <li><strong>Kill Streak:</strong> Get 15 kills without dying</li>
+        <li><strong>Prestige Master:</strong> Reach max rank in multiplayer</li>
+        <li><strong>Zombies Slayer:</strong> Survive 30+ rounds</li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
+
